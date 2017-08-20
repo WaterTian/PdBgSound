@@ -1,4 +1,4 @@
-#N canvas 191 103 1415 700 10;
+#N canvas 131 163 1122 665 10;
 #X obj 177 775 dac~;
 #X obj 672 146 mtof;
 #X obj 496 18 trigger bang bang;
@@ -101,19 +101,19 @@
 #X obj 496 -30 inlet;
 #X text 495 -49 comment;
 #X obj 124 709 *~;
-#X obj 37 568 vsl 20 50 0 1 0 0 empty empty empty 0 -9 0 10 -257985
--1 -1 1960 1;
+#X obj 37 568 vsl 20 50 0 2 0 0 empty empty empty 0 -9 0 10 -257985
+-1 -1 2940 1;
 #X obj 284 709 *~;
 #X obj 37 519 loadbang;
 #X floatatom 37 626 5 0 0 0 - - -;
 #X floatatom 672 167 5 0 0 0 - - -;
 #X floatatom 639 82 5 0 0 0 - - -;
-#X obj 639 62 + 40;
-#X obj 639 41 random 55;
-#X msg 37 545 0.4;
+#X obj 639 41 randomF 35;
+#X obj 639 62 + 45;
+#X msg 37 545 1.2;
 #X connect 1 0 106 0;
 #X connect 2 0 8 0;
-#X connect 2 1 109 0;
+#X connect 2 1 108 0;
 #X connect 3 0 8 1;
 #X connect 4 0 5 0;
 #X connect 5 0 11 0;
@@ -246,6 +246,6 @@
 #X connect 105 0 103 1;
 #X connect 106 0 9 0;
 #X connect 107 0 1 0;
-#X connect 108 0 107 0;
-#X connect 109 0 108 0;
+#X connect 108 0 109 0;
+#X connect 109 0 107 0;
 #X connect 110 0 102 0;
